@@ -5,7 +5,7 @@ const auth0 = await createAuth0Client({
   domain: 'dev-38kczhfttg6rqjp.us.auth0.com',
   clientId: 'xx',
   authorizationParams: {
-    redirect_uri: '<MY_CALLBACK_URL>'
+    redirect_uri: 'achinsk.github.io'
   }
 });
 
