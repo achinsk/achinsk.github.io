@@ -1,3 +1,14 @@
+import { createAuth0Client } from '@auth0/auth0-spa-js';
+
+//with async/await
+const auth0 = await createAuth0Client({
+  domain: 'dev-38kczhfttg6rqjp.us.auth0.com',
+  clientId: 'xx',
+  authorizationParams: {
+    redirect_uri: '<MY_CALLBACK_URL>'
+  }
+});
+
 //redirect to the Universal Login Page
 document.getElementById('login').addEventListener('click', async () => {
   await auth0.loginWithRedirect();
