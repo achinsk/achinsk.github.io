@@ -2,11 +2,11 @@ import { createAuth0Client } from '@auth0/auth0-spa-js';
 
 //with async/await
 const auth0 = await createAuth0Client({
-domain: 'dev-38kczhfttg6rqjp.us.auth0.com',
+domain: 'dev-38kczh.us.auth0.com',
 clientId: 'xx',
 authorizationParams: {
     redirect_uri: '<MY_CALLBACK_URL>'
-    redirect_uri: 'achinsk.github.io'
+    redirect_uri: 'acgithub.io'
 }
 });
 
